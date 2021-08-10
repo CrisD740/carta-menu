@@ -1,0 +1,138 @@
+:root{
+    --font-title: 'Karma', serif;
+    --font-subtitle: 'IM Fell English', serif;
+    --font-body: 'Yrsa', serif;
+    --foot-color: rgba(0, 0, 0, 0.90);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-body);
+    min-height: 100%;
+}
+
+h1, h2 {
+    font-family: var(--font-title);
+}
+
+
+h3 {
+    font-family: var(--font-subtitle);
+    margin: 5px;
+}
+
+main {
+    padding-top: 25px;
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+}
+
+main::after { 
+    content: " ";
+    display: block; 
+    height: 0; 
+    clear: both;
+ }
+
+.portada {
+    border-bottom: 1px solid #000000;
+    padding-bottom: 20px;
+    width: 960px;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.indice{
+    position: sticky;
+    top: 10px;
+    float: left;
+    width: 300px;
+    padding: 15px;
+    height: 100%;
+}
+
+.indice li{
+    margin: 10px;
+}
+
+.comidas {
+    float: right;
+    padding: 15px;
+    border-left: 1px solid;
+    margin-bottom: 100px;
+    height: 100%;
+}
+
+.comidas section {
+    width: 610px;
+    margin-bottom: 30px;
+}
+
+.comidas section img{
+    float: right;
+}
+
+dl{
+    margin-left: 15px;
+}
+
+dt {
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+dd {
+    margin-bottom: 10px;
+}
+
+
+.logo, .pie img {
+    width: 150px;
+    height: 80px;
+}
+
+.redes {
+    width: 100%;
+    text-align: end;
+}
+
+.pie {
+    display: flex;
+    position: fixed;
+    background-color: var(--foot-color);
+    bottom: 0;
+    padding: 10px;
+    width: 100%;
+}
+
+.pie a {
+    color: #ffffff;
+    transition: 1s;
+}
+
+.pie a:hover {
+    text-decoration: underline;
+    color: #dacc52;
+}
+
+.indice a {
+    color: #00000080;
+    font-weight: 600;
+    transition: 1s;
+}
+
+a:hover {
+    color: #000000;
+    text-decoration: underline;
+}
